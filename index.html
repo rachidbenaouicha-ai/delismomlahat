@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delis Momlahat</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #fafafa;
+}
+
+header {
+    background: #c0392b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero {
+    background: url('https://i.imgur.com/8Km9tLL.jpg') center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: calc(100% - 20px);
+    cursor: pointer;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Delis Momlahat</h1>
+    <p>مملحات مغربية فاخرة</p>
+</header>
+
+<section class="hero">
+    <h2>أفضل المملحات في مراكش 😍</h2>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://i.imgur.com/8Km9tLL.jpg">
+        <h3>تشكيلة مملحات راقية</h3>
+        <button class="btn" onclick="order()">اطلب عبر واتساب</button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.imgur.com/JR6mF0T.jpg">
+        <h3>بسطيلة بالحوت والروبيان</h3>
+        <button class="btn" onclick="order()">اطلب عبر واتساب</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>📸 Instagram: delismomlahat</p>
+    <p>📞 WhatsApp: 0676449674</p>
+</footer>
+
+<script>j
+function order() {
+    window.open("https://wa.me/212676449674", "_blank");
+}
+</script>
+
+</body>
+</html>
